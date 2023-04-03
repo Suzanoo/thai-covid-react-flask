@@ -1,0 +1,9 @@
+# https://stackoverflow.com/questions/60977814/nginx-gunicon-dash-flask-app-seems-to-cache-results-somewhere-where
+
+__pycache__/
+.DS_Store
+.github/
+.gitignore
+.dockerignore
+Dockerfile
+README.md
