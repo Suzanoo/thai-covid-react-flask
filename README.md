@@ -17,3 +17,4 @@
 ## Note:
 
 TODO: document for use NodeJS as proxy server.
+![Model](https://github.com/Suzanoo/thai-covid-react-flask/blob/main/client/src/public/img/img1.png)
