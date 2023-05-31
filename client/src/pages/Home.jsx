@@ -52,17 +52,22 @@ function Home() {
   return (
     <>
       <div className="grid-container">
+        {/**Header */}
         <header className="header">
           <div className="header__search">
             Thailand Covid-19 Pandamic :
-            <span style={{ color: 'orange' }}>{queryData.date}</span>
+            <span style={{ color: 'orange' }}>
+              {queryData && queryData.date}
+            </span>
           </div>
           <div className="header__avatar">Avatar</div>
         </header>
 
-        {geojsonData && <Sidenav />}
+        {/**Sidebar */}
+        {<Sidenav />}
 
         <main className="main">
+          {/**Value boxes */}
           <div className="main-overview">
             <div
               className="overviewcard"
@@ -86,6 +91,8 @@ function Home() {
               Total death: {geojsonData && geojsonData.stat.TOTAL_DEATH}
             </div>
           </div>
+
+          {/**Map */}
           <div className="main-cards">
             <div className="card">
               {geojsonData && geojsonData ? (
@@ -110,6 +117,8 @@ function Home() {
             </ul>
           </div>
         </main>
+
+        {/**Footer */}
         <footer className="footer">
           <div className="footer__copyright">&copy; 2023 MTH</div>
           <div className="footer__signature">
